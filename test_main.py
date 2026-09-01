@@ -6,7 +6,7 @@ client = TestClient(app)
 def test_read_root():
     response = client.get("/")
     assert response.status_code == 200
-    assert response.json() == "message": "Hello from Jenkins Demo App"}
+    assert response.json() == {"message": "Hello from Jenkins Demo App"}
 
 def test_health():
     response = client.get("/health")
