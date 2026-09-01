@@ -1,11 +1,11 @@
-form fastapi import FASTAPI
+from fastapi import FastAPI
 
-app = FASTAPI()
+app = FastAPI()
 
 @app.get("/")
-def read_root()
+def read_root():
     return {"message": "Hello from Jenkins Demo App"}
 
 @app.get("/health")
 def health_check():
-    return {"status" : ok}
+    return {"status": "ok"}
