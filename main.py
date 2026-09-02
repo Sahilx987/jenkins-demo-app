@@ -16,3 +16,4 @@ def health_check():
 // trigger test 2
 // webhook test
 // confirm auto-trigger works
+// trigger test after enabling checkbox
