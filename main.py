@@ -10,6 +10,8 @@ def read_root():
 def health_check():
     return {"status": "ok"}
 
-
+@app.get("/status")
+def status():
+    return {"service": "running"}
 # test1
 
